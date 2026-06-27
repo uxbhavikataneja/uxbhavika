@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      var path = window.location.pathname;
+      var query = window.location.search;
+      var hash = window.location.hash;
+      var base = '/uxbhavika';
+      var newPath = path.replace(base, '');
+      window.location.replace(
+        base + '/?p=' + encodeURIComponent(newPath) + query + hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
